@@ -4,7 +4,7 @@ import Card from "./card";
  *  none
  *
  * Props:
- * image_url
+ * deck
  *
  * (dumb component)
  *
@@ -13,8 +13,11 @@ import Card from "./card";
  */
 
 export default function Deck({ deck }) {
-  console.log(deck);
-  return <div className="Deck">
-    {deck.map(card => <Card image_url={card.image}></Card>)}
-    </div>;
+  return (
+    <div className="Deck">
+      {deck.map((card) => (
+        <Card image_url={card.image}></Card>
+      ))}
+    </div>
+  );
 }
