@@ -11,6 +11,8 @@
  *
  */
 
+
+//adding a note here for later.
 export default function Card({ image_url }) {
     return (
       <div className="Card">
